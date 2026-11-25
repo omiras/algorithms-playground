@@ -79,3 +79,8 @@ body {
 
 #resultados { padding-left: 24px; } #resultados li { margin: 6px 0; } #resultados .bien { color: #167044; } #resultados .mal { color: #a52a2a; }
 #resultados .opcional { color: #526077; }
+
+.lesson #practica ~ p > strong > code {
+  background-color: #e0efff;
+  color: #163c63;
+}

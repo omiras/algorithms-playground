@@ -27,8 +27,16 @@ console.log(cortas); // ["sol", "mar"]</code></pre>
       <section aria-labelledby="practica">
         <h2 id="practica">Tu turno</h2>
         <p>Un juego de adivinar palabras necesita preparar su lista de posibles respuestas. El diccionario contiene palabras de distintas longitudes, pero todas las respuestas del juego tienen cinco letras.</p>
-        <p>Completa getWords5Letters(words). Devuelve un array nuevo con las palabras de exactamente cinco letras. Conserva el orden y las repeticiones de la lista original. Si ninguna coincide, devuelve un array vacío.</p>
+        <p>Completa <strong><code>getWords5Letters(words)</code></strong>. Devuelve un array nuevo con las palabras de exactamente cinco letras. Conserva el orden y las repeticiones de la lista original. Si ninguna coincide, devuelve un array vacío.</p>
         <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+      </section>
+      <section aria-labelledby="esperado">
+        <h2 id="esperado">Resultado esperado</h2>
+        <pre>getWords5Letters(["mesa","silla","cuchara","tenedor","cama"]): ["silla"]
+getWords5Letters(["perro","gato","loro","pez","ciervo"]): ["perro"]
+getWords5Letters(["sol","luz","mar","cielo","sol"]): ["cielo"]
+getWords5Letters(["sol","luz","mar","sol"]): []
+getWords5Letters(["cielo","silla","cielo"]): ["cielo","silla","cielo"]</pre>
       </section>
       <section aria-labelledby="pruebas">
         <h2 id="pruebas">Comprueba tu solución</h2>

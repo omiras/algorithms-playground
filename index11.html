@@ -22,8 +22,16 @@ console.log("pedido-normal-15".includes("urgente")); // false</code></pre>
       <section aria-labelledby="practica">
         <h2 id="practica">Tu turno</h2>
         <p>En una simulación de laboratorio, cada muestra tiene varias secuencias ficticias guardadas como cadenas. Para marcar una muestra, el programa busca el patrón de texto «ATCGGCTA» en cualquiera de sus secuencias.</p>
-        <p>Completa checkDNAForAlzheimer(sequences). Devuelve true si al menos una cadena contiene «ATCGGCTA» en cualquier posición, y false si ninguna lo contiene. Una lista vacía devuelve false. Los datos y el criterio de marcado son ficticios.</p>
+        <p>Completa <strong><code>checkDNAForAlzheimer(sequences)</code></strong>. Devuelve true si al menos una cadena contiene «ATCGGCTA» en cualquier posición, y false si ninguna lo contiene. Una lista vacía devuelve false. Los datos y el criterio de marcado son ficticios.</p>
         <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+      </section>
+      <section aria-labelledby="esperado">
+        <h2 id="esperado">Resultado esperado</h2>
+        <pre>checkDNAForAlzheimer(["GGTACCATCGGCTACATC","ATCGGCTAGGTACC","TCGAGGCTA","AGCTAGCTAG","GGCTATCG"]): true
+checkDNAForAlzheimer(["ATCGGCTAAGGTC","GGTAGCTA","CTAGCTAGC","TACGGGCTAT","GCTACTGAC"]): true
+checkDNAForAlzheimer(["GCTATCGG","AGCTAGCTA","TACGACTA","AGGTACCATCG","GGCTATACG"]): false
+checkDNAForAlzheimer(["GGTACC","GGATCGGCTA"]): true
+checkDNAForAlzheimer([]): false</pre>
       </section>
       <section aria-labelledby="pruebas">
         <h2 id="pruebas">Comprueba tu solución</h2>
