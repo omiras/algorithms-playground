@@ -16,8 +16,10 @@
       <section aria-labelledby="teoria">
         <h2 id="teoria">Antes de empezar</h2>
         <p>Inicializa un acumulador antes del bucle y actualízalo solo si el elemento cumple la condición.</p>
-        <pre><code>let puntos = 0;
-for (const valor of [5, 12, 3]) {
+        <pre><code>const valores = [5, 12, 3];
+let puntos = 0;
+for (let i = 0; i &lt; valores.length; i++) {
+  const valor = valores[i];
   if (valor &lt; 10) {
     puntos += valor;
   }

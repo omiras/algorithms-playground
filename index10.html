@@ -16,8 +16,10 @@
       <section aria-labelledby="teoria">
         <h2 id="teoria">Antes de empezar</h2>
         <p>La propiedad length cuenta los caracteres de las palabras del ejercicio. El índice indicado por la longitud del array señala la siguiente posición libre.</p>
-        <pre><code>const cortas = [];
-for (const palabra of ["sol", "nube", "mar"]) {
+        <pre><code>const palabras = ["sol", "nube", "mar"];
+const cortas = [];
+for (let i = 0; i &lt; palabras.length; i++) {
+  const palabra = palabras[i];
   if (palabra.length == 3) {
     cortas[cortas.length] = palabra;
   }

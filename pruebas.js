@@ -6,7 +6,8 @@ function comprobar(pruebas) {
   const obligatorias = pruebas.filter(prueba => !prueba.opcional).length;
   let aciertos = 0;
 
-  for (const prueba of pruebas) {
+  for (let i = 0; i < pruebas.length; i++) {
+    const prueba = pruebas[i];
     const item = document.createElement("li");
     const etiqueta = prueba.opcional ? "Reto opcional" : "Prueba";
     const esperado = formatear(prueba.esperado);

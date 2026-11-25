@@ -17,8 +17,8 @@
         <h2 id="teoria">Antes de empezar</h2>
         <p>Al recorrer un array de objetos, en cada vuelta puedes leer la propiedad que necesitas.</p>
         <pre><code>const paquetes = [{ peso: 2 }, { peso: 5 }];
-for (const paquete of paquetes) {
-  console.log(paquete.peso);
+for (let i = 0; i &lt; paquetes.length; i++) {
+  console.log(paquetes[i].peso);
 }</code></pre>
       </section>
       <section aria-labelledby="practica">
