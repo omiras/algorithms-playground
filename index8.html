@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 8 · Sumar únicamente los depósitos</title>
     <link rel="stylesheet" href="style.css">
-    <script src="pruebas.js"></script>
+    <script src="pruebas.js" defer></script>
   </head>
-  <body>
+  <body data-ejercicio="8">
     <main class="lesson">
       <header>
         <h1>Ejercicio 8 · Sumar únicamente los depósitos</h1>
@@ -28,7 +28,7 @@ console.log(puntos); // 8</code></pre>
         <h2 id="practica">Tu turno</h2>
         <p>El historial de una cuenta muestra ingresos y retiradas en la misma lista. La persona que consulta el historial quiere saber cuánto dinero ha ingresado en total durante el periodo.</p>
         <p>Completa <strong><code>sumDeposits(deposits)</code></strong>. Suma los importes positivos y devuelve el total como número. Las retiradas son negativas. Si no hay depósitos, devuelve 0.</p>
-        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+        <p>Edita el cuerpo de la función del bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
       </section>
       <section aria-labelledby="esperado">
         <h2 id="esperado">Resultado esperado</h2>
@@ -50,15 +50,13 @@ sumDeposits([]): 0</pre>
         // Escribe tu código aquí.
         return;
       }
-    </script>
-    <script>
-      comprobar([
-        { caso: "sumDeposits([200,300,-100,500])", esperado: 1000, ejecutar: () => sumDeposits([200,300,-100,500]) },
-        { caso: "sumDeposits([-150,200,50,-50])", esperado: 250, ejecutar: () => sumDeposits([-150,200,50,-50]) },
-        { caso: "sumDeposits([150,100,-200,-300])", esperado: 250, ejecutar: () => sumDeposits([150,100,-200,-300]) },
-        { caso: "sumDeposits([-5,0])", esperado: 0, ejecutar: () => sumDeposits([-5,0]) },
-        { caso: "sumDeposits([])", esperado: 0, ejecutar: () => sumDeposits([]) }
-      ]);
+
+      // Llamadas de ejemplo. Mira el resultado en F12 → Consola.
+      console.log(sumDeposits([200,300,-100,500]));
+      console.log(sumDeposits([-150,200,50,-50]));
+      console.log(sumDeposits([150,100,-200,-300]));
+      console.log(sumDeposits([-5,0]));
+      console.log(sumDeposits([]));
     </script>
   </body>
 </html>

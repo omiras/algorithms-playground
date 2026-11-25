@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 1 · Comprobar la edad de acceso</title>
     <link rel="stylesheet" href="style.css">
-    <script src="pruebas.js"></script>
+    <script src="pruebas.js" defer></script>
   </head>
-  <body>
+  <body data-ejercicio="1">
     <main class="lesson">
       <header>
         <h1>Ejercicio 1 · Comprobar la edad de acceso</h1>
@@ -23,7 +23,7 @@ console.log(puntos &gt;= 10); // true</code></pre>
         <h2 id="practica">Tu turno</h2>
         <p>La organización de un evento necesita decidir si cada persona puede entrar en la zona de adultos. El formulario ya recoge la edad en años y te pasa ese número.</p>
         <p>Completa <strong><code>isAdult(age)</code></strong>. Devuelve true si la edad es de 18 años o más y false si es menor. Una persona de exactamente 18 años entra.</p>
-        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+        <p>Edita el cuerpo de la función del bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
       </section>
       <section aria-labelledby="esperado">
         <h2 id="esperado">Resultado esperado</h2>
@@ -44,14 +44,12 @@ isAdult(0): false</pre>
         // Escribe tu código aquí.
         return;
       }
-    </script>
-    <script>
-      comprobar([
-        { caso: "isAdult(17)", esperado: false, ejecutar: () => isAdult(17) },
-        { caso: "isAdult(18)", esperado: true, ejecutar: () => isAdult(18) },
-        { caso: "isAdult(25)", esperado: true, ejecutar: () => isAdult(25) },
-        { caso: "isAdult(0)", esperado: false, ejecutar: () => isAdult(0) }
-      ]);
+
+      // Llamadas de ejemplo. Mira el resultado en F12 → Consola.
+      console.log(isAdult(17));
+      console.log(isAdult(18));
+      console.log(isAdult(25));
+      console.log(isAdult(0));
     </script>
   </body>
 </html>

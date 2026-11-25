@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 7 · Decidir el acceso y mostrar un mensaje</title>
     <link rel="stylesheet" href="style.css">
-    <script src="pruebas.js"></script>
+    <script src="pruebas.js" defer></script>
   </head>
-  <body>
+  <body data-ejercicio="7">
     <main class="lesson">
       <header>
         <h1>Ejercicio 7 · Decidir el acceso y mostrar un mensaje</h1>
@@ -57,15 +57,13 @@ Mensajes de Carlos y John en la consola: ["Carlos no es adulto en España","John
         const isJohnAdult = isAdultInCountryWithObject({ name: "John", age: 21, country: "EEUU" });
         // Escribe el if…else para John.
       }
-    </script>
-    <script>
-      comprobar([
-        { caso: "isAdultInCountryWithObject({\"name\":\"Carlos\",\"age\":17,\"country\":\"España\"})", esperado: false, ejecutar: () => isAdultInCountryWithObject({"name":"Carlos","age":17,"country":"España"}) },
-        { caso: "isAdultInCountryWithObject({\"name\":\"Ana\",\"age\":18,\"country\":\"España\"})", esperado: true, ejecutar: () => isAdultInCountryWithObject({"name":"Ana","age":18,"country":"España"}) },
-        { caso: "isAdultInCountryWithObject({\"name\":\"Sam\",\"age\":20,\"country\":\"EEUU\"})", esperado: false, ejecutar: () => isAdultInCountryWithObject({"name":"Sam","age":20,"country":"EEUU"}) },
-        { caso: "isAdultInCountryWithObject({\"name\":\"John\",\"age\":21,\"country\":\"EEUU\"})", esperado: true, ejecutar: () => isAdultInCountryWithObject({"name":"John","age":21,"country":"EEUU"}) },
-        { caso: "Mensajes de Carlos y John en la consola", esperado: ["Carlos no es adulto en España","John es adulto en EEUU"], ejecutar: () => capturarMensajes(showAdultMessages) }
-      ]);
+
+      // Llamadas de ejemplo. Mira el resultado en F12 → Consola.
+      console.log(isAdultInCountryWithObject({"name":"Carlos","age":17,"country":"España"}));
+      console.log(isAdultInCountryWithObject({"name":"Ana","age":18,"country":"España"}));
+      console.log(isAdultInCountryWithObject({"name":"Sam","age":20,"country":"EEUU"}));
+      console.log(isAdultInCountryWithObject({"name":"John","age":21,"country":"EEUU"}));
+      showAdultMessages();
     </script>
   </body>
 </html>

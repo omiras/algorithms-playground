@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 10 · Preparar un diccionario de palabras de cinco letras</title>
     <link rel="stylesheet" href="style.css">
-    <script src="pruebas.js"></script>
+    <script src="pruebas.js" defer></script>
   </head>
-  <body>
+  <body data-ejercicio="10">
     <main class="lesson">
       <header>
         <h1>Ejercicio 10 · Preparar un diccionario de palabras de cinco letras</h1>
@@ -28,7 +28,7 @@ console.log(cortas); // ["sol", "mar"]</code></pre>
         <h2 id="practica">Tu turno</h2>
         <p>Un juego de adivinar palabras necesita preparar su lista de posibles respuestas. El diccionario contiene palabras de distintas longitudes, pero todas las respuestas del juego tienen cinco letras.</p>
         <p>Completa <strong><code>getWords5Letters(words)</code></strong>. Devuelve un array nuevo con las palabras de exactamente cinco letras. Conserva el orden y las repeticiones de la lista original. Si ninguna coincide, devuelve un array vacío.</p>
-        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+        <p>Edita el cuerpo de la función del bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
       </section>
       <section aria-labelledby="esperado">
         <h2 id="esperado">Resultado esperado</h2>
@@ -51,15 +51,13 @@ getWords5Letters(["cielo","silla","cielo"]): ["cielo","silla","cielo"]</pre>
         // Recorre words y añade las coincidencias.
         return words5Letters;
       }
-    </script>
-    <script>
-      comprobar([
-        { caso: "getWords5Letters([\"mesa\",\"silla\",\"cuchara\",\"tenedor\",\"cama\"])", esperado: ["silla"], ejecutar: () => getWords5Letters(["mesa","silla","cuchara","tenedor","cama"]) },
-        { caso: "getWords5Letters([\"perro\",\"gato\",\"loro\",\"pez\",\"ciervo\"])", esperado: ["perro"], ejecutar: () => getWords5Letters(["perro","gato","loro","pez","ciervo"]) },
-        { caso: "getWords5Letters([\"sol\",\"luz\",\"mar\",\"cielo\",\"sol\"])", esperado: ["cielo"], ejecutar: () => getWords5Letters(["sol","luz","mar","cielo","sol"]) },
-        { caso: "getWords5Letters([\"sol\",\"luz\",\"mar\",\"sol\"])", esperado: [], ejecutar: () => getWords5Letters(["sol","luz","mar","sol"]) },
-        { caso: "getWords5Letters([\"cielo\",\"silla\",\"cielo\"])", esperado: ["cielo","silla","cielo"], ejecutar: () => getWords5Letters(["cielo","silla","cielo"]) }
-      ]);
+
+      // Llamadas de ejemplo. Mira el resultado en F12 → Consola.
+      console.log(getWords5Letters(["mesa","silla","cuchara","tenedor","cama"]));
+      console.log(getWords5Letters(["perro","gato","loro","pez","ciervo"]));
+      console.log(getWords5Letters(["sol","luz","mar","cielo","sol"]));
+      console.log(getWords5Letters(["sol","luz","mar","sol"]));
+      console.log(getWords5Letters(["cielo","silla","cielo"]));
     </script>
   </body>
 </html>

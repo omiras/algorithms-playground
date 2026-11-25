@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 3 · Saludar en el idioma elegido</title>
     <link rel="stylesheet" href="style.css">
-    <script src="pruebas.js"></script>
+    <script src="pruebas.js" defer></script>
   </head>
-  <body>
+  <body data-ejercicio="3">
     <main class="lesson">
       <header>
         <h1>Ejercicio 3 · Saludar en el idioma elegido</h1>
@@ -23,7 +23,7 @@ const aviso = "Próxima parada: " + barrio;</code></pre>
         <h2 id="practica">Tu turno</h2>
         <p>La pantalla de bienvenida de un hotel recibe el nombre de la persona y el idioma que ha elegido en recepción. Debe preparar un saludo para mostrarlo en pantalla.</p>
         <p>Completa <strong><code>sayHi(name, language)</code></strong>. Si el idioma es «spanish», devuelve «Hola, Carlos!» para Carlos. Si es «french», devuelve «Bonjour, Anne!» para Anne. Conserva la coma, el espacio y la exclamación. Como reto opcional, admite también valores como «SpAnIsH».</p>
-        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+        <p>Edita el cuerpo de la función del bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
       </section>
       <section aria-labelledby="esperado">
         <h2 id="esperado">Resultado esperado</h2>
@@ -44,14 +44,13 @@ Reto opcional · sayHi("Carmen", "SpAnIsH"): "Hola, Carmen!"</pre>
         // Escribe tu código aquí.
         return;
       }
-    </script>
-    <script>
-      comprobar([
-        { caso: "sayHi(\"Carlos\", \"spanish\")", esperado: "Hola, Carlos!", ejecutar: () => sayHi("Carlos", "spanish") },
-        { caso: "sayHi(\"Anne\", \"french\")", esperado: "Bonjour, Anne!", ejecutar: () => sayHi("Anne", "french") },
-        { caso: "sayHi(\"John\", \"spanish\")", esperado: "Hola, John!", ejecutar: () => sayHi("John", "spanish") },
-        { caso: "sayHi(\"Carmen\", \"SpAnIsH\")", esperado: "Hola, Carmen!", ejecutar: () => sayHi("Carmen", "SpAnIsH"), opcional: true }
-      ]);
+
+      // Llamadas de ejemplo. Mira el resultado en F12 → Consola.
+      console.log(sayHi("Carlos", "spanish"));
+      console.log(sayHi("Anne", "french"));
+      console.log(sayHi("John", "spanish"));
+      // Reto opcional
+      console.log(sayHi("Carmen", "SpAnIsH"));
     </script>
   </body>
 </html>
