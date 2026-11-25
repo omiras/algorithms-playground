@@ -42,8 +42,8 @@ checkDNAForAlzheimer([]): false</pre>
     </main>
     <script>
       function checkDNAForAlzheimer(sequences) {
-        for (const sequence of sequences) {
-          if (sequence.includes("ATCGGCTA")) {
+        for (let i = 0; i < sequences.length; i++) {
+          if (sequences[i].includes("ATCGGCTA")) {
             return true;
           }
         }
