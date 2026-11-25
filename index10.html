@@ -30,49 +30,13 @@ console.log(cortas); // ["sol", "mar"]</code></pre>
         <p>Completa <strong><code>getWords5Letters(words)</code></strong>. Devuelve un array nuevo con las palabras de exactamente cinco letras. Conserva el orden y las repeticiones de la lista original. Si ninguna coincide, devuelve un array vacío.</p>
         <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
       </section>
-      <section class="expected-results" aria-labelledby="resultado-esperado">
-        <h2 id="resultado-esperado">Resultado esperado</h2>
-        <p>Estos son los resultados que debe producir cada prueba al completar el ejercicio.</p>
-        <section class="expected-case" aria-labelledby="esperado-1">
-          <h3 id="esperado-1">Prueba 1</h3>
-          <p><strong>Llamada:</strong> <code>getWords5Letters([&quot;mesa&quot;,&quot;silla&quot;,&quot;cuchara&quot;,&quot;tenedor&quot;,&quot;cama&quot;])</code></p>
-          <p><strong>Resultado esperado:</strong></p>
-          <pre><code>[
-  &quot;silla&quot;
-]</code></pre>
-        </section>
-        <section class="expected-case" aria-labelledby="esperado-2">
-          <h3 id="esperado-2">Prueba 2</h3>
-          <p><strong>Llamada:</strong> <code>getWords5Letters([&quot;perro&quot;,&quot;gato&quot;,&quot;loro&quot;,&quot;pez&quot;,&quot;ciervo&quot;])</code></p>
-          <p><strong>Resultado esperado:</strong></p>
-          <pre><code>[
-  &quot;perro&quot;
-]</code></pre>
-        </section>
-        <section class="expected-case" aria-labelledby="esperado-3">
-          <h3 id="esperado-3">Prueba 3</h3>
-          <p><strong>Llamada:</strong> <code>getWords5Letters([&quot;sol&quot;,&quot;luz&quot;,&quot;mar&quot;,&quot;cielo&quot;,&quot;sol&quot;])</code></p>
-          <p><strong>Resultado esperado:</strong></p>
-          <pre><code>[
-  &quot;cielo&quot;
-]</code></pre>
-        </section>
-        <section class="expected-case" aria-labelledby="esperado-4">
-          <h3 id="esperado-4">Prueba 4</h3>
-          <p><strong>Llamada:</strong> <code>getWords5Letters([&quot;sol&quot;,&quot;luz&quot;,&quot;mar&quot;,&quot;sol&quot;])</code></p>
-          <p><strong>Resultado esperado:</strong></p>
-          <pre><code>[]</code></pre>
-        </section>
-        <section class="expected-case" aria-labelledby="esperado-5">
-          <h3 id="esperado-5">Prueba 5</h3>
-          <p><strong>Llamada:</strong> <code>getWords5Letters([&quot;cielo&quot;,&quot;silla&quot;,&quot;cielo&quot;])</code></p>
-          <p><strong>Resultado esperado:</strong></p>
-          <pre><code>[
-  &quot;cielo&quot;,
-  &quot;silla&quot;,
-  &quot;cielo&quot;
-]</code></pre>
-        </section>
+      <section aria-labelledby="esperado">
+        <h2 id="esperado">Resultado esperado</h2>
+        <pre>getWords5Letters(["mesa","silla","cuchara","tenedor","cama"]): ["silla"]
+getWords5Letters(["perro","gato","loro","pez","ciervo"]): ["perro"]
+getWords5Letters(["sol","luz","mar","cielo","sol"]): ["cielo"]
+getWords5Letters(["sol","luz","mar","sol"]): []
+getWords5Letters(["cielo","silla","cielo"]): ["cielo","silla","cielo"]</pre>
       </section>
       <section aria-labelledby="pruebas">
         <h2 id="pruebas">Comprueba tu solución</h2>

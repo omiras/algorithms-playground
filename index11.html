@@ -25,39 +25,13 @@ console.log("pedido-normal-15".includes("urgente")); // false</code></pre>
         <p>Completa <strong><code>checkDNAForAlzheimer(sequences)</code></strong>. Devuelve true si al menos una cadena contiene «ATCGGCTA» en cualquier posición, y false si ninguna lo contiene. Una lista vacía devuelve false. Los datos y el criterio de marcado son ficticios.</p>
         <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
       </section>
-      <section class="expected-results" aria-labelledby="resultado-esperado">
-        <h2 id="resultado-esperado">Resultado esperado</h2>
-        <p>Estos son los resultados que debe producir cada prueba al completar el ejercicio.</p>
-        <section class="expected-case" aria-labelledby="esperado-1">
-          <h3 id="esperado-1">Prueba 1</h3>
-          <p><strong>Llamada:</strong> <code>checkDNAForAlzheimer([&quot;GGTACCATCGGCTACATC&quot;,&quot;ATCGGCTAGGTACC&quot;,&quot;TCGAGGCTA&quot;,&quot;AGCTAGCTAG&quot;,&quot;GGCTATCG&quot;])</code></p>
-          <p><strong>Resultado esperado:</strong></p>
-          <pre><code>true</code></pre>
-        </section>
-        <section class="expected-case" aria-labelledby="esperado-2">
-          <h3 id="esperado-2">Prueba 2</h3>
-          <p><strong>Llamada:</strong> <code>checkDNAForAlzheimer([&quot;ATCGGCTAAGGTC&quot;,&quot;GGTAGCTA&quot;,&quot;CTAGCTAGC&quot;,&quot;TACGGGCTAT&quot;,&quot;GCTACTGAC&quot;])</code></p>
-          <p><strong>Resultado esperado:</strong></p>
-          <pre><code>true</code></pre>
-        </section>
-        <section class="expected-case" aria-labelledby="esperado-3">
-          <h3 id="esperado-3">Prueba 3</h3>
-          <p><strong>Llamada:</strong> <code>checkDNAForAlzheimer([&quot;GCTATCGG&quot;,&quot;AGCTAGCTA&quot;,&quot;TACGACTA&quot;,&quot;AGGTACCATCG&quot;,&quot;GGCTATACG&quot;])</code></p>
-          <p><strong>Resultado esperado:</strong></p>
-          <pre><code>false</code></pre>
-        </section>
-        <section class="expected-case" aria-labelledby="esperado-4">
-          <h3 id="esperado-4">Prueba 4</h3>
-          <p><strong>Llamada:</strong> <code>checkDNAForAlzheimer([&quot;GGTACC&quot;,&quot;GGATCGGCTA&quot;])</code></p>
-          <p><strong>Resultado esperado:</strong></p>
-          <pre><code>true</code></pre>
-        </section>
-        <section class="expected-case" aria-labelledby="esperado-5">
-          <h3 id="esperado-5">Prueba 5</h3>
-          <p><strong>Llamada:</strong> <code>checkDNAForAlzheimer([])</code></p>
-          <p><strong>Resultado esperado:</strong></p>
-          <pre><code>false</code></pre>
-        </section>
+      <section aria-labelledby="esperado">
+        <h2 id="esperado">Resultado esperado</h2>
+        <pre>checkDNAForAlzheimer(["GGTACCATCGGCTACATC","ATCGGCTAGGTACC","TCGAGGCTA","AGCTAGCTAG","GGCTATCG"]): true
+checkDNAForAlzheimer(["ATCGGCTAAGGTC","GGTAGCTA","CTAGCTAGC","TACGGGCTAT","GCTACTGAC"]): true
+checkDNAForAlzheimer(["GCTATCGG","AGCTAGCTA","TACGACTA","AGGTACCATCG","GGCTATACG"]): false
+checkDNAForAlzheimer(["GGTACC","GGATCGGCTA"]): true
+checkDNAForAlzheimer([]): false</pre>
       </section>
       <section aria-labelledby="pruebas">
         <h2 id="pruebas">Comprueba tu solución</h2>
