@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 · Leer la edad de una ficha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pruebas.js"></script>
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 6 · Leer la edad de una ficha</h1>
+        <p>Nivel básico</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Usa la notación de punto para leer una propiedad de un objeto.</p>
+        <pre><code>const entrada = { fila: "B", asiento: 12 };
+console.log(entrada.asiento); // 12</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Un centro deportivo registra a cada persona en una ficha con nombre y edad. Al inscribirla en una actividad para adultos, la aplicación recibe la ficha completa.</p>
+        <p>Completa isAdult(person). Lee la propiedad age del objeto y devuelve true a partir de los 18 años, incluidos los 18. La propiedad name identifica a la persona.</p>
+        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+      </section>
+      <section aria-labelledby="pruebas">
+        <h2 id="pruebas">Comprueba tu solución</h2>
+        <p>Cada prueba muestra la entrada, el resultado esperado y el obtenido.</p>
+        <p id="resumen" aria-live="polite"></p>
+        <ul id="resultados"></ul>
+      </section>
+    </main>
+    <script>
+      function isAdult(person) {
+        // Escribe tu código aquí.
+        return;
+      }
+    </script>
+    <script>
+      comprobar([
+        { caso: "isAdult({\"name\":\"John\",\"age\":18})", esperado: true, ejecutar: () => isAdult({"name":"John","age":18}) },
+        { caso: "isAdult({\"name\":\"Alice\",\"age\":25})", esperado: true, ejecutar: () => isAdult({"name":"Alice","age":25}) },
+        { caso: "isAdult({\"name\":\"Bobby\",\"age\":17})", esperado: false, ejecutar: () => isAdult({"name":"Bobby","age":17}) }
+      ]);
+    </script>
+  </body>
+</html>

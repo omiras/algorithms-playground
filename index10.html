@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 · Preparar un diccionario de palabras de cinco letras</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pruebas.js"></script>
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 10 · Preparar un diccionario de palabras de cinco letras</h1>
+        <p>Nivel intermedio</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>La propiedad length cuenta los caracteres de las palabras del ejercicio. El índice indicado por la longitud del array señala la siguiente posición libre.</p>
+        <pre><code>const cortas = [];
+for (const palabra of ["sol", "nube", "mar"]) {
+  if (palabra.length === 3) {
+    cortas[cortas.length] = palabra;
+  }
+}
+console.log(cortas); // ["sol", "mar"]</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Un juego de adivinar palabras necesita preparar su lista de posibles respuestas. El diccionario contiene palabras de distintas longitudes, pero todas las respuestas del juego tienen cinco letras.</p>
+        <p>Completa getWords5Letters(words). Devuelve un array nuevo con las palabras de exactamente cinco letras. Conserva el orden y las repeticiones de la lista original. Si ninguna coincide, devuelve un array vacío.</p>
+        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+      </section>
+      <section aria-labelledby="pruebas">
+        <h2 id="pruebas">Comprueba tu solución</h2>
+        <p>Cada prueba muestra la entrada, el resultado esperado y el obtenido.</p>
+        <p id="resumen" aria-live="polite"></p>
+        <ul id="resultados"></ul>
+      </section>
+    </main>
+    <script>
+      function getWords5Letters(words) {
+        const words5Letters = [];
+        // Recorre words y añade las coincidencias.
+        return words5Letters;
+      }
+    </script>
+    <script>
+      comprobar([
+        { caso: "getWords5Letters([\"mesa\",\"silla\",\"cuchara\",\"tenedor\",\"cama\"])", esperado: ["silla"], ejecutar: () => getWords5Letters(["mesa","silla","cuchara","tenedor","cama"]) },
+        { caso: "getWords5Letters([\"perro\",\"gato\",\"loro\",\"pez\",\"ciervo\"])", esperado: ["perro"], ejecutar: () => getWords5Letters(["perro","gato","loro","pez","ciervo"]) },
+        { caso: "getWords5Letters([\"sol\",\"luz\",\"mar\",\"cielo\",\"sol\"])", esperado: ["cielo"], ejecutar: () => getWords5Letters(["sol","luz","mar","cielo","sol"]) },
+        { caso: "getWords5Letters([\"sol\",\"luz\",\"mar\",\"sol\"])", esperado: [], ejecutar: () => getWords5Letters(["sol","luz","mar","sol"]) },
+        { caso: "getWords5Letters([\"cielo\",\"silla\",\"cielo\"])", esperado: ["cielo","silla","cielo"], ejecutar: () => getWords5Letters(["cielo","silla","cielo"]) }
+      ]);
+    </script>
+  </body>
+</html>

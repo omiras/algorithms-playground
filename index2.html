@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 · Aplicar el límite de edad según el país</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pruebas.js"></script>
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 2 · Aplicar el límite de edad según el país</h1>
+        <p>Nivel básico</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Elige primero el límite en función de un dato y compáralo después con el valor recibido.</p>
+        <pre><code>const sala = "grande";
+const asistentes = 12;
+let aforo = 10;
+if (sala === "grande") {
+  aforo = 30;
+}
+console.log(asistentes &lt; aforo); // true</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Un portal tiene reglas de acceso distintas para sus dos sedes. Recibe la edad de la persona y el país de la sede que ha seleccionado.</p>
+        <p>Completa isAdultInCountry(age, country). Para «España» el límite del ejercicio es 18 años y para «EEUU» es 21. Devuelve un booleano. Solo recibirás esos dos países.</p>
+        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+      </section>
+      <section aria-labelledby="pruebas">
+        <h2 id="pruebas">Comprueba tu solución</h2>
+        <p>Cada prueba muestra la entrada, el resultado esperado y el obtenido.</p>
+        <p id="resumen" aria-live="polite"></p>
+        <ul id="resultados"></ul>
+      </section>
+    </main>
+    <script>
+      function isAdultInCountry(age, country) {
+        // Escribe tu código aquí.
+        return;
+      }
+    </script>
+    <script>
+      comprobar([
+        { caso: "isAdultInCountry(17, \"España\")", esperado: false, ejecutar: () => isAdultInCountry(17, "España") },
+        { caso: "isAdultInCountry(18, \"España\")", esperado: true, ejecutar: () => isAdultInCountry(18, "España") },
+        { caso: "isAdultInCountry(20, \"EEUU\")", esperado: false, ejecutar: () => isAdultInCountry(20, "EEUU") },
+        { caso: "isAdultInCountry(21, \"EEUU\")", esperado: true, ejecutar: () => isAdultInCountry(21, "EEUU") },
+        { caso: "isAdultInCountry(21, \"España\")", esperado: true, ejecutar: () => isAdultInCountry(21, "España") }
+      ]);
+    </script>
+  </body>
+</html>

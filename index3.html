@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 · Saludar en el idioma elegido</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pruebas.js"></script>
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 3 · Saludar en el idioma elegido</h1>
+        <p>Nivel básico</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Una plantilla de cadena permite insertar un valor con ${…}. toLowerCase() convierte una cadena a minúsculas.</p>
+        <pre><code>const barrio = "Centro";
+const aviso = `Próxima parada: ${barrio}`;</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>La pantalla de bienvenida de un hotel recibe el nombre de la persona y el idioma que ha elegido en recepción. Debe preparar un saludo para mostrarlo en pantalla.</p>
+        <p>Completa sayHi(name, language). Si el idioma es «spanish», devuelve «Hola, Carlos!» para Carlos. Si es «french», devuelve «Bonjour, Anne!» para Anne. Conserva la coma, el espacio y la exclamación. Como reto opcional, admite también valores como «SpAnIsH».</p>
+        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+      </section>
+      <section aria-labelledby="pruebas">
+        <h2 id="pruebas">Comprueba tu solución</h2>
+        <p>Cada prueba muestra la entrada, el resultado esperado y el obtenido.</p>
+        <p id="resumen" aria-live="polite"></p>
+        <ul id="resultados"></ul>
+      </section>
+    </main>
+    <script>
+      function sayHi(name, language) {
+        // Escribe tu código aquí.
+        return;
+      }
+    </script>
+    <script>
+      comprobar([
+        { caso: "sayHi(\"Carlos\", \"spanish\")", esperado: "Hola, Carlos!", ejecutar: () => sayHi("Carlos", "spanish") },
+        { caso: "sayHi(\"Anne\", \"french\")", esperado: "Bonjour, Anne!", ejecutar: () => sayHi("Anne", "french") },
+        { caso: "sayHi(\"John\", \"spanish\")", esperado: "Hola, John!", ejecutar: () => sayHi("John", "spanish") },
+        { caso: "sayHi(\"Carmen\", \"SpAnIsH\")", esperado: "Hola, Carmen!", ejecutar: () => sayHi("Carmen", "SpAnIsH"), opcional: true }
+      ]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 · Comprobar la edad de acceso</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pruebas.js"></script>
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 1 · Comprobar la edad de acceso</h1>
+        <p>Nivel básico</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Una comparación con &gt;= devuelve un booleano.</p>
+        <pre><code>const puntos = 10;
+console.log(puntos &gt;= 10); // true</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>La organización de un evento necesita decidir si cada persona puede entrar en la zona de adultos. El formulario ya recoge la edad en años y te pasa ese número.</p>
+        <p>Completa isAdult(age). Devuelve true si la edad es de 18 años o más y false si es menor. Una persona de exactamente 18 años entra.</p>
+        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+      </section>
+      <section aria-labelledby="pruebas">
+        <h2 id="pruebas">Comprueba tu solución</h2>
+        <p>Cada prueba muestra la entrada, el resultado esperado y el obtenido.</p>
+        <p id="resumen" aria-live="polite"></p>
+        <ul id="resultados"></ul>
+      </section>
+    </main>
+    <script>
+      function isAdult(age) {
+        // Escribe tu código aquí.
+        return;
+      }
+    </script>
+    <script>
+      comprobar([
+        { caso: "isAdult(17)", esperado: false, ejecutar: () => isAdult(17) },
+        { caso: "isAdult(18)", esperado: true, ejecutar: () => isAdult(18) },
+        { caso: "isAdult(25)", esperado: true, ejecutar: () => isAdult(25) },
+        { caso: "isAdult(0)", esperado: false, ejecutar: () => isAdult(0) }
+      ]);
+    </script>
+  </body>
+</html>

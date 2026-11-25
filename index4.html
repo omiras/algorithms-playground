@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 · Convertir euros a yenes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pruebas.js"></script>
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 4 · Convertir euros a yenes</h1>
+        <p>Nivel básico</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Para convertir una cantidad, multiplícala por el valor de una unidad en la medida de destino.</p>
+        <pre><code>const centimetrosPorMetro = 100;
+const centimetros = 2.5 * centimetrosPorMetro; // 250</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>Una agencia de viajes quiere mostrar un presupuesto en yenes a los clientes que preparan un viaje a Japón. Para este ejercicio, el cambio está fijado en 163,4 yenes por euro.</p>
+        <p>Completa euroToYen(euros). Usa conversion_rate y devuelve el importe convertido como número. Mantén los decimales cuando los haya.</p>
+        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+      </section>
+      <section aria-labelledby="pruebas">
+        <h2 id="pruebas">Comprueba tu solución</h2>
+        <p>Cada prueba muestra la entrada, el resultado esperado y el obtenido.</p>
+        <p id="resumen" aria-live="polite"></p>
+        <ul id="resultados"></ul>
+      </section>
+    </main>
+    <script>
+      function euroToYen(euros) {
+        const conversion_rate = 163.4;
+        // Calcula y devuelve el importe en yenes.
+      }
+    </script>
+    <script>
+      comprobar([
+        { caso: "euroToYen(0)", esperado: 0, ejecutar: () => euroToYen(0) },
+        { caso: "euroToYen(1)", esperado: 163.4, ejecutar: () => euroToYen(1) },
+        { caso: "euroToYen(10)", esperado: 1634, ejecutar: () => euroToYen(10) },
+        { caso: "euroToYen(0.5)", esperado: 81.7, ejecutar: () => euroToYen(0.5) }
+      ]);
+    </script>
+  </body>
+</html>

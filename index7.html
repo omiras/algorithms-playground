@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 · Decidir el acceso y mostrar un mensaje</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pruebas.js"></script>
+  </head>
+  <body>
+    <main class="lesson">
+      <header>
+        <h1>Ejercicio 7 · Decidir el acceso y mostrar un mensaje</h1>
+        <p>Nivel básico</p>
+      </header>
+      <section aria-labelledby="teoria">
+        <h2 id="teoria">Antes de empezar</h2>
+        <p>Puedes evaluar un booleano con if…else para elegir el mensaje que se escribe en la consola.</p>
+        <pre><code>const reservaConfirmada = true;
+if (reservaConfirmada) {
+  console.log("La mesa está reservada");
+} else {
+  console.log("La mesa está libre");
+}</code></pre>
+      </section>
+      <section aria-labelledby="practica">
+        <h2 id="practica">Tu turno</h2>
+        <p>En la recepción de un evento internacional, cada ficha contiene el nombre, la edad y el país de una persona. La aplicación necesita decidir el acceso y explicarlo en la consola.</p>
+        <p>Completa isAdultInCountryWithObject(person) con los límites del ejercicio: 18 años para «España» y 21 para «EEUU». Después, usa un if…else para cada ficha del código inicial. Muestra exactamente «Carlos no es adulto en España» y «John es adulto en EEUU», según los booleanos que devuelve la función.</p>
+        <p>Edita el cuerpo de las dos funciones y abre la consola con <strong>F12 → Consola</strong> para ver los mensajes. Guarda el archivo y recarga la página.</p>
+      </section>
+      <section aria-labelledby="pruebas">
+        <h2 id="pruebas">Comprueba tu solución</h2>
+        <p>Cada prueba muestra la entrada, el resultado esperado y el obtenido.</p>
+        <p id="resumen" aria-live="polite"></p>
+        <ul id="resultados"></ul>
+      </section>
+    </main>
+    <script>
+      function isAdultInCountryWithObject(person) {
+        // Escribe tu código aquí.
+        return;
+      }
+
+      function showAdultMessages() {
+        const isCarlosAdult = isAdultInCountryWithObject({ name: "Carlos", age: 17, country: "España" });
+        // Escribe el if…else para Carlos.
+
+        const isJohnAdult = isAdultInCountryWithObject({ name: "John", age: 21, country: "EEUU" });
+        // Escribe el if…else para John.
+      }
+    </script>
+    <script>
+      comprobar([
+        { caso: "isAdultInCountryWithObject({\"name\":\"Carlos\",\"age\":17,\"country\":\"España\"})", esperado: false, ejecutar: () => isAdultInCountryWithObject({"name":"Carlos","age":17,"country":"España"}) },
+        { caso: "isAdultInCountryWithObject({\"name\":\"Ana\",\"age\":18,\"country\":\"España\"})", esperado: true, ejecutar: () => isAdultInCountryWithObject({"name":"Ana","age":18,"country":"España"}) },
+        { caso: "isAdultInCountryWithObject({\"name\":\"Sam\",\"age\":20,\"country\":\"EEUU\"})", esperado: false, ejecutar: () => isAdultInCountryWithObject({"name":"Sam","age":20,"country":"EEUU"}) },
+        { caso: "isAdultInCountryWithObject({\"name\":\"John\",\"age\":21,\"country\":\"EEUU\"})", esperado: true, ejecutar: () => isAdultInCountryWithObject({"name":"John","age":21,"country":"EEUU"}) },
+        { caso: "Mensajes de Carlos y John en la consola", esperado: ["Carlos no es adulto en España","John es adulto en EEUU"], ejecutar: () => capturarMensajes(showAdultMessages) }
+      ]);
+    </script>
+  </body>
+</html>
