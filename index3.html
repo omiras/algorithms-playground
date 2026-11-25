@@ -15,9 +15,9 @@
       </header>
       <section aria-labelledby="teoria">
         <h2 id="teoria">Antes de empezar</h2>
-        <p>Una plantilla de cadena permite insertar un valor con ${…}. toLowerCase() convierte una cadena a minúsculas.</p>
+        <p>El operador + une dos cadenas. Incluye en la primera cadena el espacio que debe aparecer antes del nombre. toLowerCase() convierte una cadena a minúsculas.</p>
         <pre><code>const barrio = "Centro";
-const aviso = `Próxima parada: ${barrio}`;</code></pre>
+const aviso = "Próxima parada: " + barrio;</code></pre>
       </section>
       <section aria-labelledby="practica">
         <h2 id="practica">Tu turno</h2>
@@ -42,9 +42,9 @@ Reto opcional · sayHi("Carmen", "SpAnIsH"): "Hola, Carmen!"</pre>
     <script>
       function sayHi(name, language) {
         if (language.toLowerCase() === "spanish") {
-          return `Hola, ${name}!`;
+          return "Hola, " + name + "!";
         }
-        return `Bonjour, ${name}!`;
+        return "Bonjour, " + name + "!";
       }
     </script>
     <script>
