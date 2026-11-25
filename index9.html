@@ -36,8 +36,11 @@ for (const paquete of paquetes) {
     </main>
     <script>
       function accountBalance(movements) {
-        // Escribe tu código aquí.
-        return;
+        let balance = 0;
+        for (const movement of movements) {
+          balance += movement.value;
+        }
+        return balance;
       }
     </script>
     <script>

@@ -39,8 +39,13 @@ console.log(puntos); // 8</code></pre>
     </main>
     <script>
       function sumDeposits(deposits) {
-        // Escribe tu código aquí.
-        return;
+        let total = 0;
+        for (const deposit of deposits) {
+          if (deposit > 0) {
+            total += deposit;
+          }
+        }
+        return total;
       }
     </script>
     <script>

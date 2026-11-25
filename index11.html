@@ -34,8 +34,12 @@ console.log("pedido-normal-15".includes("urgente")); // false</code></pre>
     </main>
     <script>
       function checkDNAForAlzheimer(sequences) {
-        // Escribe tu código aquí.
-        return;
+        for (const sequence of sequences) {
+          if (sequence.includes("ATCGGCTA")) {
+            return true;
+          }
+        }
+        return false;
       }
     </script>
     <script>

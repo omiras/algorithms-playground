@@ -38,16 +38,26 @@ if (reservaConfirmada) {
     </main>
     <script>
       function isAdultInCountryWithObject(person) {
-        // Escribe tu código aquí.
-        return;
+        if (person.country === "España") {
+          return person.age >= 18;
+        }
+        return person.age >= 21;
       }
 
       function showAdultMessages() {
         const isCarlosAdult = isAdultInCountryWithObject({ name: "Carlos", age: 17, country: "España" });
-        // Escribe el if…else para Carlos.
+        if (isCarlosAdult) {
+          console.log("Carlos es adulto en España");
+        } else {
+          console.log("Carlos no es adulto en España");
+        }
 
         const isJohnAdult = isAdultInCountryWithObject({ name: "John", age: 21, country: "EEUU" });
-        // Escribe el if…else para John.
+        if (isJohnAdult) {
+          console.log("John es adulto en EEUU");
+        } else {
+          console.log("John no es adulto en EEUU");
+        }
       }
     </script>
     <script>

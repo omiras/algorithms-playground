@@ -39,8 +39,10 @@ console.log(asistentes &lt; aforo); // true</code></pre>
     </main>
     <script>
       function isAdultInCountry(age, country) {
-        // Escribe tu código aquí.
-        return;
+        if (country === "España") {
+          return age >= 18;
+        }
+        return age >= 21;
       }
     </script>
     <script>

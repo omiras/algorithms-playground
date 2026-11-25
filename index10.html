@@ -40,7 +40,11 @@ console.log(cortas); // ["sol", "mar"]</code></pre>
     <script>
       function getWords5Letters(words) {
         const words5Letters = [];
-        // Recorre words y añade las coincidencias.
+        for (const word of words) {
+          if (word.length === 5) {
+            words5Letters[words5Letters.length] = word;
+          }
+        }
         return words5Letters;
       }
     </script>

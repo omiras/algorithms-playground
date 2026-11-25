@@ -34,8 +34,10 @@ const aviso = `Próxima parada: ${barrio}`;</code></pre>
     </main>
     <script>
       function sayHi(name, language) {
-        // Escribe tu código aquí.
-        return;
+        if (language.toLowerCase() === "spanish") {
+          return `Hola, ${name}!`;
+        }
+        return `Bonjour, ${name}!`;
       }
     </script>
     <script>
