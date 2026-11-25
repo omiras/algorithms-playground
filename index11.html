@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 11 · Buscar un patrón dentro de una secuencia</title>
     <link rel="stylesheet" href="style.css">
-    <script src="pruebas.js"></script>
+    <script src="pruebas.js" defer></script>
   </head>
-  <body>
+  <body data-ejercicio="11">
     <main class="lesson">
       <header>
         <h1>Ejercicio 11 · Buscar un patrón dentro de una secuencia</h1>
@@ -23,7 +23,7 @@ console.log("pedido-normal-15".includes("urgente")); // false</code></pre>
         <h2 id="practica">Tu turno</h2>
         <p>En una simulación de laboratorio, cada muestra tiene varias secuencias ficticias guardadas como cadenas. Para marcar una muestra, el programa busca el patrón de texto «ATCGGCTA» en cualquiera de sus secuencias.</p>
         <p>Completa <strong><code>checkDNAForAlzheimer(sequences)</code></strong>. Devuelve true si al menos una cadena contiene «ATCGGCTA» en cualquier posición, y false si ninguna lo contiene. Una lista vacía devuelve false. Los datos y el criterio de marcado son ficticios.</p>
-        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+        <p>Edita el cuerpo de la función del bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
       </section>
       <section aria-labelledby="esperado">
         <h2 id="esperado">Resultado esperado</h2>
@@ -49,15 +49,6 @@ checkDNAForAlzheimer([]): false</pre>
         }
         return false;
       }
-    </script>
-    <script>
-      comprobar([
-        { caso: "checkDNAForAlzheimer([\"GGTACCATCGGCTACATC\",\"ATCGGCTAGGTACC\",\"TCGAGGCTA\",\"AGCTAGCTAG\",\"GGCTATCG\"])", esperado: true, ejecutar: () => checkDNAForAlzheimer(["GGTACCATCGGCTACATC","ATCGGCTAGGTACC","TCGAGGCTA","AGCTAGCTAG","GGCTATCG"]) },
-        { caso: "checkDNAForAlzheimer([\"ATCGGCTAAGGTC\",\"GGTAGCTA\",\"CTAGCTAGC\",\"TACGGGCTAT\",\"GCTACTGAC\"])", esperado: true, ejecutar: () => checkDNAForAlzheimer(["ATCGGCTAAGGTC","GGTAGCTA","CTAGCTAGC","TACGGGCTAT","GCTACTGAC"]) },
-        { caso: "checkDNAForAlzheimer([\"GCTATCGG\",\"AGCTAGCTA\",\"TACGACTA\",\"AGGTACCATCG\",\"GGCTATACG\"])", esperado: false, ejecutar: () => checkDNAForAlzheimer(["GCTATCGG","AGCTAGCTA","TACGACTA","AGGTACCATCG","GGCTATACG"]) },
-        { caso: "checkDNAForAlzheimer([\"GGTACC\",\"GGATCGGCTA\"])", esperado: true, ejecutar: () => checkDNAForAlzheimer(["GGTACC","GGATCGGCTA"]) },
-        { caso: "checkDNAForAlzheimer([])", esperado: false, ejecutar: () => checkDNAForAlzheimer([]) }
-      ]);
     </script>
   </body>
 </html>

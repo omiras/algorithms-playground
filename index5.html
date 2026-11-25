@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 5 · Organizar a los participantes por parejas</title>
     <link rel="stylesheet" href="style.css">
-    <script src="pruebas.js"></script>
+    <script src="pruebas.js" defer></script>
   </head>
-  <body>
+  <body data-ejercicio="5">
     <main class="lesson">
       <header>
         <h1>Ejercicio 5 · Organizar a los participantes por parejas</h1>
@@ -23,7 +23,7 @@ console.log(entradas.length % 2); // 1</code></pre>
         <h2 id="practica">Tu turno</h2>
         <p>En un taller, cada participante necesita una pareja para la siguiente actividad. La organización tiene una lista con los nombres y quiere saber si alguien se quedará sin pareja.</p>
         <p>Completa <strong><code>canWeMakePairs(names)</code></strong>. Devuelve true si todos pueden agruparse de dos en dos y false si sobra una persona. La lista contiene al menos un nombre.</p>
-        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+        <p>Edita el cuerpo de la función del bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
       </section>
       <section aria-labelledby="esperado">
         <h2 id="esperado">Resultado esperado</h2>
@@ -43,14 +43,6 @@ canWeMakePairs(["Alice"]): false</pre>
       function canWeMakePairs(names) {
         return names.length % 2 === 0;
       }
-    </script>
-    <script>
-      comprobar([
-        { caso: "canWeMakePairs([\"Alice\",\"Bob\",\"Charlie\",\"David\"])", esperado: true, ejecutar: () => canWeMakePairs(["Alice","Bob","Charlie","David"]) },
-        { caso: "canWeMakePairs([\"Alice\",\"Bob\",\"Charlie\"])", esperado: false, ejecutar: () => canWeMakePairs(["Alice","Bob","Charlie"]) },
-        { caso: "canWeMakePairs([\"Alice\",\"Bob\"])", esperado: true, ejecutar: () => canWeMakePairs(["Alice","Bob"]) },
-        { caso: "canWeMakePairs([\"Alice\"])", esperado: false, ejecutar: () => canWeMakePairs(["Alice"]) }
-      ]);
     </script>
   </body>
 </html>

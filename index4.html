@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 4 · Convertir euros a yenes</title>
     <link rel="stylesheet" href="style.css">
-    <script src="pruebas.js"></script>
+    <script src="pruebas.js" defer></script>
   </head>
-  <body>
+  <body data-ejercicio="4">
     <main class="lesson">
       <header>
         <h1>Ejercicio 4 · Convertir euros a yenes</h1>
@@ -23,7 +23,7 @@ const centimetros = 2.5 * centimetrosPorMetro; // 250</code></pre>
         <h2 id="practica">Tu turno</h2>
         <p>Una agencia de viajes quiere mostrar un presupuesto en yenes a los clientes que preparan un viaje a Japón. Para este ejercicio, el cambio está fijado en 163,4 yenes por euro.</p>
         <p>Completa <strong><code>euroToYen(euros)</code></strong>. Usa conversion_rate y devuelve el importe convertido como número. Mantén los decimales cuando los haya.</p>
-        <p>Edita el cuerpo de la función del primer bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
+        <p>Edita el cuerpo de la función del bloque <code>&lt;script&gt;</code> dentro de <code>&lt;body&gt;</code>. Guarda el archivo y recarga la página.</p>
       </section>
       <section aria-labelledby="esperado">
         <h2 id="esperado">Resultado esperado</h2>
@@ -44,14 +44,6 @@ euroToYen(0.5): 81.7</pre>
         const conversion_rate = 163.4;
         return euros * conversion_rate;
       }
-    </script>
-    <script>
-      comprobar([
-        { caso: "euroToYen(0)", esperado: 0, ejecutar: () => euroToYen(0) },
-        { caso: "euroToYen(1)", esperado: 163.4, ejecutar: () => euroToYen(1) },
-        { caso: "euroToYen(10)", esperado: 1634, ejecutar: () => euroToYen(10) },
-        { caso: "euroToYen(0.5)", esperado: 81.7, ejecutar: () => euroToYen(0.5) }
-      ]);
     </script>
   </body>
 </html>
