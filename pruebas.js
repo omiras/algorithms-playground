@@ -43,7 +43,6 @@ function capturarMensajes(ejecutar) {
 
   console.log = (...valores) => {
     mensajes.push(valores.join(" "));
-    logOriginal.apply(console, valores);
   };
 
   try {

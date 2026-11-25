@@ -50,6 +50,13 @@ accountBalance([]): 0</pre>
         }
         return balance;
       }
+
+      // Llamadas de ejemplo. Mira el resultado en F12 → Consola.
+      console.log(accountBalance([{"date":"2023-04-01","value":100},{"date":"2023-04-02","value":-50},{"date":"2023-04-03","value":150}]));
+      console.log(accountBalance([{"date":"2023-04-04","value":500}]));
+      console.log(accountBalance([{"date":"2023-04-05","value":300},{"date":"2023-04-06","value":-100},{"date":"2023-04-07","value":-200},{"date":"2023-04-08","value":50}]));
+      console.log(accountBalance([{"date":"2023-04-09","value":-25}]));
+      console.log(accountBalance([]));
     </script>
   </body>
 </html>
