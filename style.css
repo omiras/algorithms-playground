@@ -79,3 +79,28 @@ body {
 
 #resultados { padding-left: 24px; } #resultados li { margin: 6px 0; } #resultados .bien { color: #167044; } #resultados .mal { color: #a52a2a; }
 #resultados .opcional { color: #526077; }
+
+/* Resultados de referencia visibles antes de ejecutar las pruebas. */
+.lesson .expected-results {
+  border-left: 4px solid #245b87;
+}
+
+.lesson .expected-case {
+  margin: 16px 0 0;
+  padding: 16px;
+  background-color: #f5f8fc;
+}
+
+.lesson .expected-case h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.lesson .expected-case p code {
+  overflow-wrap: anywhere;
+}
+
+.lesson #practica ~ p > strong > code {
+  background-color: #e0efff;
+  color: #163c63;
+}
